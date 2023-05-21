@@ -1,22 +1,22 @@
-import './globals.css'
-import { Inter } from 'next/font/google'
+import "./globals.css";
+import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: 'Banter',
-  description: "Banter with random people on the internet. Yeah that's a great idea",
-}
+  title: "Schedule",
+  description:
+    "a site where you can track your goals in a calender and make your  calender public so that it keeps you more accountable",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        div.{children}</body>
+      <body className={inter.className}>div.{children}</body>
     </html>
-  )
+  );
 }
